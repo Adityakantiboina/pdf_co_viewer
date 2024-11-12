@@ -1,0 +1,164 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2 {
+    color: #2c3e50;
+    margin: 0;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #7f8c8d;
+  }
+  
+  /* Login Page Styles */
+  .login {
+    background-color: #ffffff;
+    max-width: 380px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    text-align: center;
+  }
+  
+  .login div {
+    margin-bottom: 15px;
+  }
+  
+  .login label {
+    display: block;
+    margin: 8px 0;
+    font-size: 16px;
+  }
+  
+  .login input[type='radio'] {
+    margin-right: 8px;
+  }
+  
+  .login button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login button:hover {
+    background-color: #2980b9;
+  }
+  
+  .login button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+  }
+  
+  /* Admin View Styles */
+  .admin-view {
+    background-color: #ffffff;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pdf-viewer {
+    height: 500px;
+    border: 1px solid #ecf0f1;
+    margin: 15px 0;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 48%;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+  }
+  
+  p {
+    margin-top: 8px;
+    font-size: 16px;
+    text-align: center;
+    color: #7f8c8d;
+  }
+  
+  /* Viewer Page Styles */
+  .viewer-page {
+    background-color: #ffffff;
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .viewer-page .pdf-viewer {
+    margin: 15px 0;
+  }
+  
+  .viewer-page p {
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .login {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .admin-view, .viewer-page {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .controls {
+      flex-direction: column;
+    }
+  
+    button {
+      width: 100%;
+      margin-bottom: 8px;
+    }
+  }
+  

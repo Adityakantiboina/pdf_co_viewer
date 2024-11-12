@@ -1,0 +1,130 @@
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Style for the entire body */
+body {
+  background-color: #dad4d4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Basic container styling */
+.page-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #d3bfbf;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+}
+
+/* Header styling */
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+  color: #333;
+}
+
+/* Input and Button styling */
+input[type="file"] {
+  display: block;
+  margin: 20px auto;
+  border-radius: 500px;
+}
+
+button {
+  display: inline-block;
+  background: #8fbae7;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Role buttons on the homepage */
+.role-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.role-buttons .button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  background: #94c2f3;
+  border-radius: 50px;
+  transition: background 0.3s ease;
+}
+
+.role-buttons .button:hover {
+  background: #0056b3;
+}
+
+.homepage-container {
+  text-align: center;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #d3bfbf;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+}
+
+.homepage-container h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.homepage-container p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+/* Specific styling for the admin and viewer pages */
+.admin-page, .viewer-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.admin-page input[type="file"] {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.admin-page .pdf-viewer, .viewer-page .pdf-viewer {
+  width: 100%;
+  height: 600px; /* Adjust height as needed */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow-y: auto;
+}
+
+.admin-page button, .viewer-page button {
+  margin: 10px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
